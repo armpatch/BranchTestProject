@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Branch Test Project</string>
+    <string name="start_page">Start Page</string>
 </resources>
