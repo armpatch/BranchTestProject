@@ -31,9 +31,28 @@
                 <category android:name="android.intent.category.BROWSABLE" />
                 <data
                     android:host="9bw6w.test-app.link"
-                    android:scheme="https" />
+                    android:scheme="https"
+                    android:path="/Vq6dfij2P6"
+                    />
             </intent-filter>
 
         </activity>
+
+        <activity android:name=".SecondaryActivity"
+            android:launchMode="singleInstance">
+
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!--if you combine scheme, host, and path: https://9bw6w.test-app.link/bkULjFa8P6-->
+                <data
+                    android:host="9bw6w.test-app.link"
+                    android:scheme="https"
+                    android:path="/bkULjFa8P6"
+                    />
+            </intent-filter>
+        </activity>
+
     </application>
 </manifest>
